@@ -26,7 +26,7 @@ public class RegisterController {
 	@RequestMapping(value = "/registerProcess", method = RequestMethod.POST)
 	public String callRegisterProcess(@ModelAttribute("registerdto") RegisterDto registerDto) {
 		registerService.registerServiceProvider(registerDto);
-		return "";
+		return " Hello";
 
 	}
 
